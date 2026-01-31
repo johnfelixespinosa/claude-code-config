@@ -1,0 +1,21 @@
+# Template: Create Table Migration
+# Variables: table_name, columns, indexes, references, use_uuid
+
+class Create<%= table_name.camelize.pluralize %> < ActiveRecord::Migration[8.0]
+  def change
+    create_table :<%= table_name.tableize %><%= ", id: :uuid" if use_uuid %> do |t|
+<% columns.each do |col| -%>
+      t.<%= col[:type] %> :<%= col[:name] %><%= col[:options] %>
+<% end -%>
+<% references.each do |ref| -%>
+      t.references :<%= ref[:name] %><%= ", type: :uuid" if use_uuid %>, foreign_key: true<%= ref[:options] %>
+<% end -%>
+
+      t.timestamps
+    end
+
+<% indexes.each do |idx| -%>
+    add_index :<%= table_name.tableize %>, <%= idx[:columns].inspect %><%= idx[:options] %>
+<% end -%>
+  end
+end

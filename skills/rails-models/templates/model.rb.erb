@@ -1,0 +1,39 @@
+# Template: Model Class
+# Variables: class_name, associations, validations, enums, scopes, callbacks
+
+class <%= class_name %> < ApplicationRecord
+<% if associations.any? -%>
+  # Associations
+<% associations.each do |assoc| -%>
+  <%= assoc %>
+<% end -%>
+
+<% end -%>
+<% if enums.any? -%>
+  # Enums
+<% enums.each do |enum| -%>
+  <%= enum %>
+<% end -%>
+
+<% end -%>
+<% if validations.any? -%>
+  # Validations
+<% validations.each do |val| -%>
+  <%= val %>
+<% end -%>
+
+<% end -%>
+<% if scopes.any? -%>
+  # Scopes
+<% scopes.each do |scope| -%>
+  <%= scope %>
+<% end -%>
+
+<% end -%>
+<% if callbacks.any? -%>
+  # Callbacks
+<% callbacks.each do |cb| -%>
+  <%= cb %>
+<% end -%>
+<% end -%>
+end

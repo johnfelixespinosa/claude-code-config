@@ -1,0 +1,56 @@
+{
+  "total_count": 5,
+  "incomplete_results": false,
+  "items": [
+    {
+      "full_name": "anthropics/claude-code-skills-examples",
+      "description": "Example skills for Claude Code - templates, patterns, and best practices",
+      "html_url": "https://github.com/anthropics/claude-code-skills-examples",
+      "language": "Python",
+      "stargazers_count": 1245,
+      "forks_count": 189,
+      "created_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-25T15:30:00Z"
+    },
+    {
+      "full_name": "devuser/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Code skills",
+      "html_url": "https://github.com/devuser/awesome-claude-skills",
+      "language": "Markdown",
+      "stargazers_count": 876,
+      "forks_count": 92,
+      "created_at": "2026-01-10T08:00:00Z",
+      "updated_at": "2026-01-24T12:00:00Z"
+    },
+    {
+      "full_name": "aitools/skill-builder",
+      "description": "CLI tool for scaffolding and testing Claude Code skills",
+      "html_url": "https://github.com/aitools/skill-builder",
+      "language": "TypeScript",
+      "stargazers_count": 534,
+      "forks_count": 67,
+      "created_at": "2026-01-08T14:00:00Z",
+      "updated_at": "2026-01-23T09:45:00Z"
+    },
+    {
+      "full_name": "researcher/ai-code-benchmarks",
+      "description": "Benchmarking AI coding assistants including Claude Code, Cursor, Copilot",
+      "html_url": "https://github.com/researcher/ai-code-benchmarks",
+      "language": "Python",
+      "stargazers_count": 312,
+      "forks_count": 45,
+      "created_at": "2026-01-05T16:00:00Z",
+      "updated_at": "2026-01-22T11:30:00Z"
+    },
+    {
+      "full_name": "coder/claude-mcp-toolkit",
+      "description": "MCP server toolkit for Claude Code with pre-built integrations",
+      "html_url": "https://github.com/coder/claude-mcp-toolkit",
+      "language": "JavaScript",
+      "stargazers_count": 198,
+      "forks_count": 28,
+      "created_at": "2026-01-03T09:00:00Z",
+      "updated_at": "2026-01-20T14:15:00Z"
+    }
+  ]
+}

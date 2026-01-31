@@ -1,0 +1,58 @@
+{
+  "hits": [
+    {
+      "objectID": "39001234",
+      "title": "Show HN: Claude Code Skills - Build Custom AI Workflows",
+      "url": "https://github.com/anthropics/claude-code-skills",
+      "author": "techbuilder",
+      "created_at_i": 1737936000,
+      "points": 342,
+      "num_comments": 87,
+      "story_text": null
+    },
+    {
+      "objectID": "39001235",
+      "title": "How I automated my entire dev workflow with Claude Code skills",
+      "url": "https://blog.example.com/claude-code-skills-automation",
+      "author": "devautomator",
+      "created_at_i": 1737504000,
+      "points": 189,
+      "num_comments": 45,
+      "story_text": null
+    },
+    {
+      "objectID": "39001236",
+      "title": "Claude Code vs Cursor: A Deep Comparison (January 2026)",
+      "url": "https://techblog.example.com/claude-vs-cursor-2026",
+      "author": "aireviewer",
+      "created_at_i": 1737244800,
+      "points": 256,
+      "num_comments": 112,
+      "story_text": null
+    },
+    {
+      "objectID": "39001237",
+      "title": "The SKILL.md Format: A Simple Way to Extend AI Coding Assistants",
+      "url": "",
+      "author": "skilldev",
+      "created_at_i": 1736985600,
+      "points": 78,
+      "num_comments": 23,
+      "story_text": "I've been experimenting with creating custom skills for Claude Code..."
+    },
+    {
+      "objectID": "39001238",
+      "title": "Ask HN: What AI coding tools are you using in 2026?",
+      "url": "",
+      "author": "curious_dev",
+      "created_at_i": 1736812800,
+      "points": 445,
+      "num_comments": 234,
+      "story_text": null
+    }
+  ],
+  "nbHits": 5,
+  "page": 0,
+  "nbPages": 1,
+  "hitsPerPage": 25
+}

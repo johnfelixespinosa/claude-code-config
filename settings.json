@@ -1,0 +1,19 @@
+{
+  "alwaysThinkingEnabled": true,
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/johnespinosa/.claude/hooks/rails-conventions.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+# Claude Code Config Git Repository
+# Only track configuration, skills, and hooks - NOT sensitive/generated data
+
+# ===== SENSITIVE DATA - NEVER COMMIT =====
+history.jsonl
+stats-cache.json
+*.log
+*.tmp
+
+# ===== GENERATED/CACHE DATA =====
+cache/
+debug/
+file-history/
+paste-cache/
+plans/
+session-env/
+shell-snapshots/
+statsig/
+tasks/
+telemetry/
+todos/
+local/
+
+# ===== PLUGINS (installed separately) =====
+plugins/
+
+# ===== PROJECTS (contains local paths) =====
+projects/
+
+# ===== INTERNAL STATE =====
+.claude/
+
+# ===== PYTHON =====
+__pycache__/
+*.pyc
+*.pyo
+
+# ===== OS FILES =====
+.DS_Store
+Thumbs.db
+
+# ===== EDITOR =====
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ===== WHAT WE DO TRACK =====
+# CLAUDE.md - Main conventions
+# settings.json - Claude Code settings
+# settings.local.json - Local overrides
+# .mcp.json - MCP server config
+# skills/ - Custom skills
+# hooks/ - Custom hooks
