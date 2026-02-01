@@ -23,7 +23,6 @@ cat > "${NOTES_DIR}/session-log.md" << EOF
 ## Continuation IDs
 - Gemini Pro: \`gemini-${SESSION_ID}\`
 - GPT-5: \`gpt5-${SESSION_ID}\`
-- O3: \`o3-${SESSION_ID}\`
 
 ## Phase Progress
 - [ ] Phase 1: User Interview
@@ -31,7 +30,7 @@ cat > "${NOTES_DIR}/session-log.md" << EOF
 - [ ] Phase 3: Multi-Model Consultation
   - [ ] Round 1: Clarifying Questions
   - [ ] Round 2: Perspectives
-  - [ ] Round 3: Cross-Review
+  - [ ] Round 3: Cross-Review (if needed)
 - [ ] Phase 4: Synthesis
 - [ ] Phase 5: Delivery
 
@@ -44,4 +43,3 @@ echo "SESSION_ID=${SESSION_ID}"
 echo "NOTES_DIR=${NOTES_DIR}"
 echo "GEMINI_THREAD=gemini-${SESSION_ID}"
 echo "GPT5_THREAD=gpt5-${SESSION_ID}"
-echo "O3_THREAD=o3-${SESSION_ID}"

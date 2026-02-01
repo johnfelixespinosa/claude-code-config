@@ -35,13 +35,9 @@ Do NOT provide implementation suggestions yet. Only ask questions to gather more
 - model_role: "architecture and system design"
 - focus_areas: "scalability, maintainability, system boundaries, data flow, component interactions"
 
-**GPT-5 (Implementation)**:
-- model_role: "implementation and code patterns"
-- focus_areas: "code organization, design patterns, API design, developer experience, testing approach"
-
-**O3 (Edge Cases)**:
-- model_role: "edge cases and reliability"
-- focus_areas: "error handling, security considerations, failure modes, input validation, race conditions"
+**GPT-5 (Implementation + Edge Cases)**:
+- model_role: "implementation, code patterns, and reliability"
+- focus_areas: "code organization, design patterns, API design, testing approach, error handling, security considerations, edge cases"
 
 ---
 
@@ -85,10 +81,10 @@ Provide your architecture and system design perspective for this implementation.
 Be specific and actionable. Reference existing patterns in the codebase where applicable.
 ```
 
-### GPT-5 - Implementation Perspective
+### GPT-5 - Implementation + Edge Cases Perspective
 
 ```
-You are the implementation specialist in a multi-model consultation.
+You are the implementation and reliability specialist in a multi-model consultation.
 
 ## Task Description
 {task_description}
@@ -101,7 +97,7 @@ You are the implementation specialist in a multi-model consultation.
 {round1_answers}
 
 ## Instructions
-Provide your implementation perspective for this task. Include:
+Provide your implementation and reliability perspective for this task. Include:
 
 ### 1. Implementation Approach
 - Step-by-step implementation plan
@@ -116,57 +112,19 @@ Provide your implementation perspective for this task. Include:
 - Important methods and their responsibilities
 - Interface definitions
 
-### 4. Testing Strategy
+### 4. Error Handling & Edge Cases
+- Expected failure modes and recovery approaches
+- Input validation and boundary conditions
+- Security considerations (vulnerabilities, auth, sanitization)
+- Race conditions and concurrency concerns
+- Specific edge cases that must be handled
+
+### 5. Testing Strategy
 - Unit test approach
 - Integration test considerations
 - Edge cases to cover
 
-Provide concrete code examples where helpful. Match the existing codebase style.
-```
-
-### O3 - Edge Cases Perspective
-
-```
-You are the reliability and edge cases specialist in a multi-model consultation.
-
-## Task Description
-{task_description}
-
-## Codebase Context
-{reconnaissance_summary}
-
-## User Requirements & Answers
-{user_requirements}
-{round1_answers}
-
-## Instructions
-Provide your edge cases and reliability perspective. Include:
-
-### 1. Error Handling Strategy
-- Expected failure modes
-- Error recovery approaches
-- User-facing error messages
-
-### 2. Input Validation
-- Validation rules needed
-- Boundary conditions
-- Malformed input handling
-
-### 3. Security Considerations
-- Potential vulnerabilities
-- Authentication/authorization needs
-- Data sanitization
-
-### 4. Race Conditions & Concurrency
-- Potential race conditions
-- Locking/synchronization needs
-- Idempotency requirements
-
-### 5. Edge Cases Checklist
-- List specific edge cases that must be handled
-- Include realistic examples
-
-Be thorough but practical. Focus on issues that are likely to occur in production.
+Provide concrete code examples where helpful. Match the existing codebase style. Be thorough but practical on edge cases — focus on issues likely to occur in production.
 ```
 
 ---
@@ -184,11 +142,8 @@ You are reviewing implementation perspectives from other AI models.
 ## Architecture Perspective (Gemini Pro)
 {gemini_perspective}
 
-## Implementation Perspective (GPT-5)
+## Implementation + Edge Cases Perspective (GPT-5)
 {gpt5_perspective}
-
-## Edge Cases Perspective (O3)
-{o3_perspective}
 
 ## Your Previous Perspective
 {own_perspective}
@@ -280,7 +235,7 @@ Any remaining questions or decisions to be made during implementation.
 
 ---
 
-## Quick Validation (Flash/O3-mini)
+## Quick Validation (Flash)
 
 ### Template
 
