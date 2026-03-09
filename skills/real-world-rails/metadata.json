@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "organization": "Steve Clarke",
+  "date": "February 2026",
+  "abstract": "Research how production Rails apps solve architectural problems by searching across 200+ open source codebases. Ask how apps implement patterns like background jobs, multi-tenancy, authentication, PDF generation, soft deletes, and more. Optionally runs adversarial debate between approaches for your specific project.",
+  "references": [
+    "https://github.com/steveclarke/real-world-rails"
+  ]
+}
